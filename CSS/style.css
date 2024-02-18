@@ -2,7 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+header {
+  background-image: url(../Assets/images/background-hero.png);
+}
+
 .header-container {
-  background-color: black;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  padding-top: 37px;
+}
+.header-logo {
+  width: 40%;
+}
+.header-logo a {
+  display: inline-block;
+}
+.header-nav {
+  width: 40%;
+}
+.header-nav ul {
+  list-style-type: none;
+}
+.header-nav ul li a {
+  text-decoration: none;
+}
+.header-search {
+  width: 20%;
 }
