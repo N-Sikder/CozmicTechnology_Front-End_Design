@@ -4,9 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  background-image: url("../Assets/images/background-hero.png");
-}
 .barlow-regular {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
@@ -17,6 +14,23 @@ header {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.primary-btn {
+  background-color: #fca311;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+.primary-btn:hover {
+  background: #f19604;
+  border: 1px solid #7d4d00;
+  color: black;
 }
 
 /* Header Styles */
@@ -56,9 +70,13 @@ header {
   color: white;
   line-height: 20px;
   font-weight: 700;
-  transition: 0.5s;
+  transition: all 0.3s;
   padding: 8px 15px;
   display: inline-block;
+}
+.active {
+  color: black;
+  background-color: #fca311;
 }
 .header-nav ul li a:hover {
   color: black;
@@ -72,3 +90,10 @@ header {
 }
 
 /* header hero styles */
+.hero {
+  background-image: url("../Assets/images/background-hero.png");
+  padding: 250px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
