@@ -19,7 +19,7 @@
   background-color: #fca311;
   display: inline-block;
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
@@ -96,4 +96,117 @@
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.hero ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000030;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+.hero-content h3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fca311;
+  margin-bottom: 20px;
+}
+.hero-content h2 {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 700;
+  color: white;
+}
+.hero-content h2 span {
+  display: block;
+  color: #fca311;
+}
+.hero-content p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Secondary hero styles */
+.secondary-hero {
+  overflow: hidden;
+}
+.secondary-hero-wrapper {
+  display: flex;
+  height: 100%;
+  gap: 10px;
+}
+.secondary-hero-left {
+  background-color: #fca311;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+  position: relative;
+  flex-basis: 65%;
+}
+.secondary-hero-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50000px;
+  height: 100%;
+  background-color: #fca311;
+  right: 100%;
+}
+.secondary-hero-right {
+  background-color: black;
+  display: flex;
+  flex-basis: 35%;
+  position: relative;
+  padding: 50px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.secondary-hero-right ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50000px;
+  height: 100%;
+  background-color: black;
+  left: 100%;
+}
+.secondary-hero-left h3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.secondary-hero-left h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.client-review {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.client-review h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  text-align: right;
+}
+
+.client-review h5 span {
+  color: #fca311;
 }
