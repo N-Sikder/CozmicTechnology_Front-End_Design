@@ -237,7 +237,19 @@
 /* Why-us styles */
 
 .why-us-content {
+  position: relative;
+}
+.why-us-content::after {
+  position: absolute;
   content: "";
+  background-image: url("../Assets/images/why-us-back-image.png");
+  background-repeat: no-repeat;
+  opacity: 10%;
+  top: 200px;
+  left: -75px;
+  right: 0%;
+  bottom: 0;
+  z-index: 1;
 }
 .why-us-box {
   text-align: center;
