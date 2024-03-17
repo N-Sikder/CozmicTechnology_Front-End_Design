@@ -61,6 +61,16 @@
   padding: 20px 0;
   justify-content: space-between;
 }
+.header-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000055;
+  z-index: -1;
+}
 
 /* logo styles */
 .header-logo {
@@ -352,4 +362,70 @@
 .our-scope-btn {
   text-align: center;
   margin-top: 150px;
+}
+
+/* Featured Projects Styles */
+
+.featured-projects-content-box {
+  position: relative;
+  margin: 0 0 24px 0;
+}
+.featured-projects-content-box img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.featured-projects-content-box-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+.featured-projects-content-box-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000045;
+  z-index: -1;
+}
+.featured-projects-content-box-info h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.featured-projects-content-box-info h4 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+/* .featured-projects-content-box-info p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+} */
+.featured-projects-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.featured-projects-btn a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: transparent;
+}
+.featured-projects-btn a:hover {
+  background: #fcddab;
+  border: 1px solid #7d4d00;
+  color: black;
+}
+.featured-projects-btn a span {
+  color: #fca311;
 }
