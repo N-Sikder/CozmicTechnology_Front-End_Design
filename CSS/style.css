@@ -263,10 +263,11 @@
 }
 .why-us-box {
   text-align: center;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
   padding: 10px 45px;
   transition: all 0.3s;
   border: 1px solid transparent;
+  height: 100%;
 }
 .why-us-box:hover {
   border: 1px solid #fca311;
@@ -329,7 +330,7 @@
 }
 .our-scope-list-box {
   text-align: center;
-  box-shadow: 1px 1px 2px 2px #fca3113d;
+  box-shadow: 0 0 2px 2px #fca3113d;
   border-radius: 5px;
   padding-top: 25px;
   height: 100%;
