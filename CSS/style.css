@@ -430,3 +430,35 @@
 .featured-projects-btn a span {
   color: #fca311;
 }
+
+/* Stats section Styles */
+.stats {
+  background-image: url(../Assets/images/stats-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0 20px 0;
+  /* background-position: center; */
+}
+
+.all-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-stats-item {
+  text-align: center;
+}
+.all-stats-item img {
+  margin-bottom: 15px;
+}
+.all-stats-item h3 {
+  color: #fca311;
+  font-weight: 700;
+  font-size: 48px;
+}
+.all-stats-item p {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* Home Contact Section Styles */
