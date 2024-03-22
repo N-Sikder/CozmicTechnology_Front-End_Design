@@ -466,7 +466,7 @@
   background-image: url(../Assets/images/contact-background.jpg);
   background-size: cover;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 .home-contact::before {
   position: absolute;
@@ -475,13 +475,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000055;
-  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.74) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 2;
 }
 .star-icon {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 5;
 }
 .star-icon i {
   color: #fca311;
@@ -492,10 +498,13 @@
   font-size: 48px;
   line-height: 72px;
   color: #fca311;
+  position: relative;
+  z-index: 5;
 }
 .home-contact-form {
   margin-top: 50px;
-  z-index: 0;
+  z-index: 5;
+  position: relative;
 }
 .home-contact-form-item {
   display: flex;
