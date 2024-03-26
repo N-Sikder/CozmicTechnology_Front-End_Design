@@ -551,3 +551,33 @@
   transform: translateY(-50%);
   color: #3c3c3c;
 }
+
+/* Follow Us section Styles */
+.follow-us {
+  background-color: #3c3c3c;
+  padding: 40px 10px;
+}
+.follow-us-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.follow-us-wrapper h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+}
+.follow-us-wrapper h2 span {
+  color: #fca311;
+}
+.follow-us-links {
+  display: flex;
+  gap: 80px;
+}
+.follow-us-links a {
+  color: #fca311;
+  border-left: 1px solid #fca311;
+  font-size: 36px;
+  padding-left: 80px;
+}
