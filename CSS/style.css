@@ -126,14 +126,48 @@ body {
 }
 
 /* header hero styles */
-.hero {
+.hero-1 {
   background-image: url("../Assets/images/background-hero.png");
   padding: 250px 0;
   background-size: cover;
   background-position: center;
   position: relative;
 }
-.hero::before {
+.hero-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000030;
+  z-index: 0;
+}
+.hero-2 {
+  background-image: url("../Assets/images/background-hero-2.png");
+  padding: 250px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000030;
+  z-index: 0;
+}
+.hero-3 {
+  background-image: url("../Assets/images/background-hero-3.png");
+  padding: 250px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-3::before {
   content: "";
   position: absolute;
   top: 0;
@@ -172,6 +206,39 @@ body {
   margin-bottom: 30px;
 }
 
+/* Carousel Styles */
+.hero-wrapper .slick-prev {
+  left: 10px;
+  z-index: 2;
+}
+.hero-wrapper .slick-prev::before {
+  color: #fca311;
+  font-size: 25px;
+}
+.hero-wrapper .slick-next {
+  right: 10px;
+}
+.hero-wrapper .slick-next::before {
+  color: #fca311;
+  font-size: 25px;
+}
+.hero-wrapper .slick-dots {
+  bottom: 20px;
+  display: inline-block;
+}
+.slick-dots li button::before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.75;
+}
+.slick-dots li.slick-active button::before {
+  opacity: 0.75;
+  color: #fca311;
+}
+/* removes the strip of space left by the dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 /* Secondary hero styles */
 .secondary-hero {
   overflow: hidden;
